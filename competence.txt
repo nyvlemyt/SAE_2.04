@@ -4,7 +4,7 @@ UE13	Administrer des systèmes informatiques communicants	Installation d'un post
 UE14	Gérer des données de l'information	Création d'und base de données
 UE15	Conduire un projet	Recueil de besoins
 UE16	Travailler dans une équipe informatique	Découverte de l'environnement économique et écologique
-UE22	Réaliser un développement d'application	Développement d'une application
+UE21	Réaliser un développement d'application	Développement d'une application
 UE22	Optimiser des applications informatiques	Exploration algorithmique d'un problème
 UE23	Administrer des systèmes informatiques communicants	Installation de services réseau
 UE24	Gérer des données de l'information	Exploitation d'une base données
