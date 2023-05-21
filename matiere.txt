@@ -13,8 +13,8 @@
 201	36	52	Développement orienté objets
 202	34	52	Développement d'applications avec IHM
 203	36	52	Qualité de développement
-204	40	52	Communication et fonctionnement bas niveau
-205	45	52	Introduction aux services réseaux
+204	38	52	Communication et fonctionnement bas niveau
+205	40	52	Introduction aux services réseaux
 206	41	52	Exploitation d'une base de données
 207	39	52	Graphes
 208	44	52	Outils numériques pour les statistiques descriptives
