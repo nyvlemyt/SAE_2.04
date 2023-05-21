@@ -1,5 +1,5 @@
-01	Zidee	Johann	
-02	Eyala	Seraphin	
+01	Zidee	Johann
+02	Eyala	Seraphin
 03	Pommier	Melvyn
 04	Konte	Mamadou
 05	Martin	Sophie
@@ -28,6 +28,6 @@
 40	Finta	Lucian
 41	Ellouze	Slim
 42	Martinez	Louis-Antony
-43	Tchapga	Flavien	
+43	Tchapga	Flavien
 44	Bjerrum	Marie
 45	Butelle	Franck

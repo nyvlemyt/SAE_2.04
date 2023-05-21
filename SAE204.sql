@@ -127,3 +127,13 @@ alter table notes
 add constraint fk_n_semestre
 	foreign key (id_controle,id_matiere,id_semestre) 
 	references controle (id_controle,id_matiere,id_semestre);
+
+\copy personne from personne.txt
+\copy etudiant from etudiant.txt
+\copy responsable from responsable.txt
+\copy semestre from semestre.txt
+\copy matiere from matiere.txt
+\copy competence from competence.txt
+\copy coeff_competence from coeff_competence.txt
+\copy controle from controle.txt
+\copy notes from notes.txt

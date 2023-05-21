@@ -14,7 +14,7 @@
 114	26	51	Comparaison d’approches algorithmiques
 115	45	51	Installation d’un poste pour le développement
 116	30	51	Création d’une base de données
-117	28	51	Recueil de besoins	
+117	28	51	Recueil de besoins
 118	27	51	Découverte de l’environnement économique et écologique
 201	36	52	Développement orienté objets
 202	34	52	Développement d'applications avec IHM
@@ -30,7 +30,7 @@
 212	42	52	Anglais d'entreprise
 213	25	52	Communication avec le milieu professionnel
 214	25	52	Projet professionnel et personnel des métiers de l'informatique
-215	36	52	Développement d'une application	
+215	36	52	Développement d'une application
 216	39	52	Exploitation algorithmique d'un problème
 217	45	52	Installation de services réseau
 218	41	52	Exploitation d'une base de données
