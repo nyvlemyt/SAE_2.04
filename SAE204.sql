@@ -19,7 +19,7 @@ create table personne
 drop table if exists etudiant ;  
 create table etudiant
 ( id_personne int,
-  ine int,
+  groupe varchar,
   	primary key(id_personne)
  );
 
