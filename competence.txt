@@ -1,12 +1,12 @@
-UE11	Réaliser un développement d'application	Implémentation d'un besoin client
-UE12	Optimiser des applications informatiques	Comparaison d'approches algorithmiques
-UE13	Administrer des systèmes informatiques communicants	Installation d'un poste pour le développement
-UE14	Gérer des données de l'information	Création d'und base de données
-UE15	Conduire un projet	Recueil de besoins
-UE16	Travailler dans une équipe informatique	Découverte de l'environnement économique et écologique
-UE21	Réaliser un développement d'application	Développement d'une application
-UE22	Optimiser des applications informatiques	Exploration algorithmique d'un problème
-UE23	Administrer des systèmes informatiques communicants	Installation de services réseau
-UE24	Gérer des données de l'information	Exploitation d'une base données
-UE25	Conduire un projet	Gestin d'un projet
-UE26	Travailler dans une équipe informatique	Organisation d'un travail d'équipe
+UE11	Réaliser un développement d'application
+UE12	Optimiser des applications informatiques
+UE13	Administrer des systèmes informatiques communicants
+UE14	Gérer des données de l'information
+UE15	Conduire un projet
+UE16	Travailler dans une équipe informatique
+UE21	Réaliser un développement d'application
+UE22	Optimiser des applications informatiques
+UE23	Administrer des systèmes informatiques communicants
+UE24	Gérer des données de l'information
+UE25	Conduire un projet
+UE26	Travailler dans une équipe informatique

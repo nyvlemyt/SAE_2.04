@@ -1,6 +1,6 @@
 alter table etudiant drop constraint if exists fk_e_personne ;
 alter table responsable drop constraint if exists fk_r_personne ;
-alter table semestre drop constraint if exists fk_s_personne ;
+alter table groupe drop constraint if exists fk_g_semestre ;
 alter table groupe drop constraint if exists fk_g_personne ;
 alter table matiere drop constraint if exists fk_m_semestre ;
 alter table matiere drop constraint if exists fk_m_personne ;
@@ -51,19 +51,14 @@ add constraint fk_r_personne
 
 drop table if exists semestre ;
 create table semestre
-(	id_personne int,
-	id_semestre int,
+(	id_semestre int,
 	primary key(id_semestre)
  );
- 
-alter table semestre
-add constraint fk_s_personne 
-	foreign key (id_personne) 
-	references etudiant (id_personne);
 
 drop table if exists groupe ;
 create table groupe
 (	id_personne int,
+	id_semestre int,
 	nom varchar,
 	primary key(id_personne)
 );
@@ -72,6 +67,11 @@ alter table groupe
 add constraint fk_g_personne
 	foreign key (id_personne) 
 	references etudiant (id_personne);
+
+alter table groupe
+add constraint fk_g_semestre 
+	foreign key (id_semestre) 
+	references semestre (id_semestre);
 
 drop table if exists matiere ;
 create table matiere
@@ -127,10 +127,10 @@ add constraint fk_c_semestre
 
 drop table if exists controle ;
 create table controle
-( 	id_type varchar,
-  	id_semestre int,
+(	id_controle int, 	
+	id_type varchar,
+	id_semestre int,	
 	id_matiere int,
-	id_controle int,
   	nom varchar,
   	date_eval varchar,
   	primary key(id_controle,id_matiere,id_semestre,id_type)
@@ -143,11 +143,11 @@ add constraint fk_co_semestre
   
 drop table if exists notes ;
 create table notes
-( 	id_type varchar,
+(	id_personne int, 	
+	id_type varchar,
   	id_semestre int,
   	id_matiere int,
   	id_controle int,
-	id_personne int,
   	note float,
   	primary key(id_personne,id_controle,id_matiere,id_semestre,id_type)
   );
@@ -162,12 +162,13 @@ add constraint fk_n_semestre
 	foreign key (id_controle,id_matiere,id_semestre,id_type) 
 	references controle (id_controle,id_matiere,id_semestre,id_type);
 
-/*\copy personne from personne.txt
+\copy personne from personne.txt
 \copy etudiant from etudiant.txt
 \copy responsable from responsable.txt
 \copy semestre from semestre.txt
+\copy type from type.txt
 \copy matiere from matiere.txt
 \copy competence from competence.txt
 \copy coeff_competence from coeff_competence.txt
 \copy controle from controle.txt
-\copy notes from notes.txt*/
+/*\copy notes from notes.txt*/
