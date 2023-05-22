@@ -173,4 +173,4 @@ add constraint fk_n_semestre
 \copy competence from competence.txt
 \copy coeff_competence from coeff_competence.txt
 \copy controle from controle.txt
-/*\copy notes from notes.txt*/
+\copy notes from notes.txt
