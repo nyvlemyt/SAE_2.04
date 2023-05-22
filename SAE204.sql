@@ -51,16 +51,17 @@ add constraint fk_r_personne
 
 drop table if exists semestre ;
 create table semestre
-(	id_semestre int,
+(	id_semestre varchar,
 	primary key(id_semestre)
  );
 
 drop table if exists groupe ;
 create table groupe
-(	id_personne int,
-	id_semestre int,
+(	id_groupe int,	
+	id_personne int,
+	id_semestre varchar,
 	nom varchar,
-	primary key(id_personne)
+	primary key(id_groupe)
 );
  
 alter table groupe
@@ -76,7 +77,7 @@ add constraint fk_g_semestre
 drop table if exists matiere ;
 create table matiere
 ( 	id_type varchar,
-  	id_semestre int,
+  	id_semestre varchar,
 	id_matiere int,
   	id_personne int,
   	nom varchar,
@@ -109,7 +110,7 @@ drop table if exists coeff_competence ;
 create table coeff_competence
 ( 	id_competence varchar,
 	id_type varchar,
-	id_semestre int,
+	id_semestre varchar,
   	id_matiere int,
   	coefficient int,
   	primary key(id_competence,id_matiere,id_semestre,id_type)
@@ -129,7 +130,7 @@ drop table if exists controle ;
 create table controle
 (	id_controle int, 	
 	id_type varchar,
-	id_semestre int,	
+	id_semestre varchar,	
 	id_matiere int,
   	nom varchar,
   	date_eval varchar,
@@ -145,7 +146,7 @@ drop table if exists notes ;
 create table notes
 (	id_personne int, 	
 	id_type varchar,
-  	id_semestre int,
+  	id_semestre varchar,
   	id_matiere int,
   	id_controle int,
   	note float,
@@ -166,6 +167,7 @@ add constraint fk_n_semestre
 \copy etudiant from etudiant.txt
 \copy responsable from responsable.txt
 \copy semestre from semestre.txt
+\copy groupe from groupe.txt
 \copy type from type.txt
 \copy matiere from matiere.txt
 \copy competence from competence.txt

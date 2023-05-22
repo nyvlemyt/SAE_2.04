@@ -1,39 +1,39 @@
-R	51	101	26	Initiation au développement 
-R	51	102	28	Développement d'interfaces Web 
-R	51	103	28	Introduction à l'architecture des ordinateurs
-R	51	104	28	Introduction aux systèmes d’exploitation et à leur fonctionnement
-R	51	105	30	Introduction aux bases de données et SQL
-R	51	106	29	Mathématiques discrètes
-R	51	107	33	Outils mathématiques fondamentaux
-R	51	108	31	Gestion de projet & des organisations
-R	51	109	27	Économie durable et numérique
-R	51	110	32	Anglais technique 
-R	51	111	25	Bases de la communication
-R	51	112	25	Projet professionnel et personnel
-S	51	113	26	Implémentation d’un besoin client
-S	51	114	26	Comparaison d’approches algorithmiques
-S	51	115	45	Installation d’un poste pour le développement
-S	51	116	30	Création d’une base de données
-S	51	117	28	Recueil de besoins
-S	51	118	27	Découverte de l’environnement économique et écologique
-R	52	201	36	Développement orienté objets
-R	52	202	34	Développement d'applications avec IHM
-R	52	203	36	Qualité de développement
-R	52	204	38	Communication et fonctionnement bas niveau
-R	52	205	40	Introduction aux services réseaux
-R	52	206	41	Exploitation d'une base de données
-R	52	207	39	Graphes
-R	52	208	44	Outils numériques pour les statistiques descriptives
-R	52	209	39	Méthodes numériques
-R	52	210	43	Gestion de projet & des organisations
-R	52	211	37	Droit des contrats et du numérique
-R	52	212	42	Anglais d'entreprise
-R	52	213	25	Communication avec le milieu professionnel
-R	52	214	25	Projet professionnel et personnel des métiers de l'informatique
-S	52	215	36	Développement d'une application
-S	52	216	39	Exploitation algorithmique d'un problème
-S	52	217	45	Installation de services réseau
-S	52	218	41	Exploitation d'une base de données
-S	52	219	35	Gestion d'un projet
-S	52	220	25	Organisation d'un travail d'équipe
-P	52	221	25	Portfolio
+R	S1	101	26	Initiation au développement 
+R	S1	102	28	Développement d'interfaces Web 
+R	S1	103	28	Introduction à l'architecture des ordinateurs
+R	S1	104	28	Introduction aux systèmes d’exploitation et à leur fonctionnement
+R	S1	105	30	Introduction aux bases de données et SQL
+R	S1	106	29	Mathématiques discrètes
+R	S1	107	33	Outils mathématiques fondamentaux
+R	S1	108	31	Gestion de projet & des organisations
+R	S1	109	27	Économie durable et numérique
+R	S1	110	32	Anglais technique 
+R	S1	111	25	Bases de la communication
+R	S1	112	25	Projet professionnel et personnel
+S	S1	113	26	Implémentation d’un besoin client
+S	S1	114	26	Comparaison d’approches algorithmiques
+S	S1	115	45	Installation d’un poste pour le développement
+S	S1	116	30	Création d’une base de données
+S	S1	117	28	Recueil de besoins
+S	S1	118	27	Découverte de l’environnement économique et écologique
+R	S2	201	36	Développement orienté objets
+R	S2	202	34	Développement d'applications avec IHM
+R	S2	203	36	Qualité de développement
+R	S2	204	38	Communication et fonctionnement bas niveau
+R	S2	205	40	Introduction aux services réseaux
+R	S2	206	41	Exploitation d'une base de données
+R	S2	207	39	Graphes
+R	S2	208	44	Outils numériques pour les statistiques descriptives
+R	S2	209	39	Méthodes numériques
+R	S2	210	43	Gestion de projet & des organisations
+R	S2	211	37	Droit des contrats et du numérique
+R	S2	212	42	Anglais d'entreprise
+R	S2	213	25	Communication avec le milieu professionnel
+R	S2	214	25	Projet professionnel et personnel des métiers de l'informatique
+S	S2	215	36	Développement d'une application
+S	S2	216	39	Exploitation algorithmique d'un problème
+S	S2	217	45	Installation de services réseau
+S	S2	218	41	Exploitation d'une base de données
+S	S2	219	35	Gestion d'un projet
+S	S2	220	25	Organisation d'un travail d'équipe
+P	S2	221	25	Portfolio
