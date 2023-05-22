@@ -146,9 +146,9 @@ drop table if exists notes ;
 create table notes
 (	id_personne int, 	
 	id_type varchar,
+  	id_controle int,	
+	id_matiere int,
   	id_semestre varchar,
-  	id_matiere int,
-  	id_controle int,
   	note float,
   	primary key(id_personne,id_controle,id_matiere,id_semestre,id_type)
   );
