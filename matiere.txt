@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 R	51	101	26	Initiation au développement 
 R	51	102	28	Développement d'interfaces Web 
 R	51	103	28	Introduction à l'architecture des ordinateurs
@@ -37,3 +38,45 @@ S	52	218	41	Exploitation d'une base de données
 S	52	219	35	Gestion d'un projet
 S	52	220	25	Organisation d'un travail d'équipe
 P	52	221	25	Portfolio
+=======
+101	26	51	Initiation au développement 
+102	28	51	Développement d'interfaces Web 
+103	28	51	Introduction à l'architecture des ordinateurs
+104	28	51	Introduction aux systèmes d’exploitation et à leur fonctionnement
+105	30	51	Introduction aux bases de données et SQL
+106	29	51	Mathématiques discrètes
+107	33	51	Outils mathématiques fondamentaux
+108	31	51	Gestion de projet & des organisations
+109	27	51	Économie durable et numérique
+110	32	51	Anglais technique 
+111	25	51	Bases de la communication
+112	25	51	Projet professionnel et personnel
+113	26	51	Implémentation d’un besoin client
+114	26	51	Comparaison d’approches algorithmiques
+115	45	51	Installation d’un poste pour le développement
+116	30	51	Création d’une base de données
+117	28	51	Recueil de besoins
+118	27	51	Découverte de l’environnement économique et écologique
+
+201	36	52	Développement orienté objets
+202	34	52	Développement d'applications avec IHM
+203	36	52	Qualité de développement
+204	38	52	Communication et fonctionnement bas niveau
+205	40	52	Introduction aux services réseaux
+206	41	52	Exploitation d'une base de données
+207	39	52	Graphes
+208	44	52	Outils numériques pour les statistiques descriptives
+209	39	52	Méthodes numériques
+210	43	52	Gestion de projet & des organisations
+211	37	52	Droit des contrats et du numérique
+212	42	52	Anglais d'entreprise
+213	25	52	Communication avec le milieu professionnel
+214	25	52	Projet professionnel et personnel des métiers de l'informatique
+215	36	52	Développement d'une application
+216	39	52	Exploitation algorithmique d'un problème
+217	45	52	Installation de services réseau
+218	41	52	Exploitation d'une base de données
+219	35	52	Gestion d'un projet
+220	25	52	Organisation d'un travail d'équipe
+221	25	52	Portfolio
+>>>>>>> Stashed changes
