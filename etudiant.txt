@@ -1,12 +1,12 @@
-01	Whaitiri
-02	Whaitiri
-03	Whaitiri
-04	Whaitiri
-05	Shango
-06	Shango
-07	Shango
-08	Shango
-09	Zeus
-10	Zeus
-11	Zeus
-12	Zeus
+01
+02
+03
+04
+05
+06
+07
+08
+09
+10
+11
+12
