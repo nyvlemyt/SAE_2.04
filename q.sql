@@ -3,7 +3,7 @@ AS
 SELECT e.id_personne, p.nom as nom_etudiant, p.prenom, m.nom as nom_matiere, avg(note) as moyenne
 FROM etudiant e, matiere m, controle c, notes n, personne p
 WHERE m.id_matiere=c.id_matiere AND p.id_personne=e.id_personne AND c.id_controle=n.id_controle AND n.id_personne=e.id_personne and m.id_matiere=n.id_matiere and e.id_personne=1
-GROUP BY e.id_personne, p.nom, p.prenom, m.nom;*/
+GROUP BY e.id_personne, p.nom, p.prenom, m.nom;
 
 Create view moyennes_semestre1
 as
@@ -11,21 +11,21 @@ select e.id_personne, p.nom as nom_etudiant, p.prenom, s.id_semestre, ROUND(CAST
 FROM etudiant e, matiere m, controle c, notes n, personne p, semestre s
 WHERE m.id_matiere=c.id_matiere AND p.id_personne=e.id_personne AND c.id_controle=n.id_controle AND n.id_personne=e.id_personne and m.id_matiere=n.id_matiere and s.id_semestre=m.id_semestre and m.id_semestre=n.id_semestre and n.id_semestre=c.id_semestre and s.id_semestre='S1'
 group by e.id_personne, p.nom, p.prenom, s.id_semestre
-/*
+
 Create view moyennes_semestre2
 as
 select e.id_personne, p.nom as nom_etudiant, p.prenom, s.id_semestre, ROUND(CAST(avg(note) AS numeric), 2) as moyenne
 FROM etudiant e, matiere m, controle c, notes n, personne p, semestre s
 WHERE m.id_matiere=c.id_matiere AND p.id_personne=e.id_personne AND c.id_controle=n.id_controle AND n.id_personne=e.id_personne and m.id_matiere=n.id_matiere and s.id_semestre=m.id_semestre and m.id_semestre=n.id_semestre and n.id_semestre=c.id_semestre and s.id_semestre='S2'
-group by e.id_personne, p.nom, p.prenom, s.id_semestre
+group by e.id_personne, p.nom, p.prenom, s.id_semestre*/
 
 CREATE VIEW Moyennes_groupe
 AS
 SELECT g.nom as nom_groupe,e.id_personne, p.nom as nom_etudiant, p.prenom, s.id_semestre, ROUND(CAST(avg(note) AS numeric), 2) as moyenne
 FROM etudiant e, matiere m, controle c, notes n, personne p, groupe g, semestre s
-WHERE m.id_matiere=c.id_matiere AND p.id_personne=e.id_personne AND c.id_controle=n.id_controle AND n.id_personne=e.id_personne and m.id_matiere=n.id_matiere and g.id_personne=e.id_personne and s.id_semestre=m.id_semestre and m.id_semestre=n.id_semestre and n.id_semestre=c.id_semestre and g.nom='Whaitiri'
+WHERE m.id_matiere=c.id_matiere AND p.id_personne=e.id_personne AND c.id_controle=n.id_controle AND n.id_personne=e.id_personne and m.id_matiere=n.id_matiere and g.id_personne=e.id_personne and s.id_semestre=m.id_semestre and m.id_semestre=n.id_semestre and n.id_semestre=c.id_semestre and g.nom='Zeus'
 GROUP BY nom_groupe, e.id_personne, p.nom, p.prenom, s.id_semestre;
-
+/*
 CREATE FUNCTION Histogram(out NoteFloor int, out NoteRange varchar, out "[Note Count]" int)
 RETURNS SETOF RECORD
 AS
