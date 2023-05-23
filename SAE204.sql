@@ -10,22 +10,30 @@ alter table coeff_competence drop constraint if exists fk_c_semestre ;
 alter table controle drop constraint if exists fk_co_semestre ;
 alter table notes drop constraint if exists fk_n_personne ;
 alter table notes drop constraint if exists fk_n_semestre ;
-
 drop table if exists type ;
+drop table if exists personne ;
+drop table if exists etudiant ;
+drop table if exists responsable ;
+drop table if exists groupe ;
+drop table if exists semestre ;
+drop table if exists matiere ;
+drop table if exists competence ;
+drop table if exists coeff_competence ;
+drop table if exists controle ;
+drop table if exists notes ;
+
 create table type
 ( id_type varchar,
   	primary key(id_type)
   );
 
-drop table if exists personne ;
 create table personne
 ( id_personne int,
   nom varchar,
   prenom varchar,
   	primary key(id_personne)
   );
-
-drop table if exists etudiant ;  
+  
 create table etudiant
 ( id_personne int,
   	primary key(id_personne)
@@ -37,7 +45,7 @@ add constraint fk_e_personne
 	references personne (id_personne);
 
 
-drop table if exists responsable ;
+
 create table responsable
 ( id_personne int,
   	primary key(id_personne)
@@ -49,13 +57,11 @@ add constraint fk_r_personne
 	foreign key (id_personne) 
 	references personne (id_personne);
 
-drop table if exists semestre ;
 create table semestre
 (	id_semestre varchar,
 	primary key(id_semestre)
  );
 
-drop table if exists groupe ;
 create table groupe
 (	id_groupe int,	
 	id_personne int,
@@ -74,7 +80,6 @@ add constraint fk_g_semestre
 	foreign key (id_semestre) 
 	references semestre (id_semestre);
 
-drop table if exists matiere ;
 create table matiere
 ( 	id_type varchar,
   	id_semestre varchar,
@@ -99,14 +104,12 @@ add constraint fk_m_type
 	foreign key (id_type) 
 	references type (id_type);
 	
-drop table if exists competence ;
 create table competence
 ( id_competence varchar,
   nom varchar,
   	primary key(id_competence)
   );
   
-drop table if exists coeff_competence ;
 create table coeff_competence
 ( 	id_competence varchar,
 	id_type varchar,
@@ -126,7 +129,6 @@ add constraint fk_c_semestre
 	foreign key (id_matiere,id_semestre,id_type) 
 	references matiere (id_matiere,id_semestre,id_type);
 
-drop table if exists controle ;
 create table controle
 (	id_controle int, 	
 	id_type varchar,
@@ -142,7 +144,6 @@ add constraint fk_co_semestre
 	foreign key (id_matiere,id_semestre,id_type) 
 	references matiere (id_matiere,id_semestre,id_type);
   
-drop table if exists notes ;
 create table notes
 (	id_personne int, 	
 	id_type varchar,
