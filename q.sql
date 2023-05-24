@@ -2,9 +2,9 @@ CREATE VIEW Moyennes_matiere
 AS
 SELECT e.id_personne, p.nom as nom_etudiant, p.prenom, m.nom as nom_matiere, avg(note) as moyenne
 FROM etudiant e, matiere m, controle c, notes n, personne p
-WHERE m.id_matiere=c.id_matiere AND p.id_personne=e.id_personne AND c.id_controle=n.id_controle AND n.id_personne=e.id_personne and m.id_matiere=n.id_matiere and e.id_personne=1
+WHERE m.id_matiere=c.id_matiere AND p.id_personne=e.id_personne AND c.id_controle=n.id_controle AND n.id_personne=e.id_personne and m.id_matiere=n.id_matiere
 GROUP BY e.id_personne, p.nom, p.prenom, m.nom;
-
+/*
 Create view moyennes_semestre1
 as
 select e.id_personne, p.nom as nom_etudiant, p.prenom, s.id_semestre, ROUND(CAST(avg(note) AS numeric), 2) as moyenne
@@ -18,14 +18,15 @@ select e.id_personne, p.nom as nom_etudiant, p.prenom, s.id_semestre, ROUND(CAST
 FROM etudiant e, matiere m, controle c, notes n, personne p, semestre s
 WHERE m.id_matiere=c.id_matiere AND p.id_personne=e.id_personne AND c.id_controle=n.id_controle AND n.id_personne=e.id_personne and m.id_matiere=n.id_matiere and s.id_semestre=m.id_semestre and m.id_semestre=n.id_semestre and n.id_semestre=c.id_semestre and s.id_semestre='S2'
 group by e.id_personne, p.nom, p.prenom, s.id_semestre
-
+*/
 CREATE VIEW Moyennes_groupe
 AS
 SELECT g.nom as nom_groupe,e.id_personne, p.nom as nom_etudiant, p.prenom, s.id_semestre, ROUND(CAST(avg(note) AS numeric), 2) as moyenne
 FROM etudiant e, matiere m, controle c, notes n, personne p, groupe g, semestre s
-WHERE m.id_matiere=c.id_matiere AND p.id_personne=e.id_personne AND c.id_controle=n.id_controle AND n.id_personne=e.id_personne and m.id_matiere=n.id_matiere and g.id_personne=e.id_personne and s.id_semestre=m.id_semestre and m.id_semestre=n.id_semestre and n.id_semestre=c.id_semestre and g.nom='Zeus'
+WHERE m.id_matiere=c.id_matiere AND p.id_personne=e.id_personne AND c.id_controle=n.id_controle AND n.id_personne=e.id_personne and m.id_matiere=n.id_matiere and g.id_personne=e.id_personne and s.id_semestre=m.id_semestre and m.id_semestre=n.id_semestre and n.id_semestre=c.id_semestre
 GROUP BY nom_groupe, e.id_personne, p.nom, p.prenom, s.id_semestre;
 
+/*
 CREATE OR REPLACE function VoirMoyenne(id_etudiant INT, semestres VARCHAR)
 RETURNS VOID AS $$
 DECLARE
@@ -40,8 +41,10 @@ BEGIN
   INNER JOIN matiere m ON m.id_matiere = n.id_matiere
   INNER JOIN semestre s ON s.id_semestre = m.id_semestre
   WHERE e.id_personne = id_etudiant AND s.id_semestre = semestres;
- -- Afficher la moyenne de 
+ 
+ -- Afficher le numéro de l'étudiant 
   RAISE NOTICE 'Pour l''étudiant numéro: %', id_etudiant;
+ 
  -- Afficher la moyenne de l'étudiant
   RAISE NOTICE 'La moyenne de l''étudiant est : %', moyenne;
 END;
@@ -98,4 +101,4 @@ BEGIN
     INSERT INTO controle (id_controle, id_type, id_semestre, id_matiere, nom, date_eval)
     VALUES (p_id_controle, p_id_type, p_id_semestre,p_id_matiere, p_nom,p_date);
 END;
-$$ LANGUAGE plpgsql;
+$$ LANGUAGE plpgsql;*/
